@@ -8,7 +8,7 @@
                 <p>
                     <img
                     class="w-[4.6rem]"
-                    src="{{ $context['brand']->short_logo_white->manipulate(['w' => 300]) ?? '' }}"
+                    src="{{ $context['brand']->short_logo_white ? $context['brand']->short_logo_white->manipulate(['w' => 300]) : '' }}"
                     alt="{{ $context['brand']->short_logo_white->alt ?? '' }}"
                     />
                 </p>

@@ -1,5 +1,6 @@
 updatable: true
 export_paths:
+  - content/assets/assets.yaml
   - content/collections/pages.yaml
   - content/globals/brand.yaml
   - content/globals/company.yaml
@@ -12,7 +13,6 @@ export_paths:
   - config/auth.php
   - config/statamic/users.php
   - config/filesystems.php
-  - config/statamic/eloquent-driver.php
   - database/migrations/2025_08_26_054407_statamic_auth_tables.php
   - users
   - resources

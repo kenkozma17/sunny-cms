@@ -18,20 +18,23 @@
         </button>
     </div>
     <ul class="flex flex-col gap-[1rem] justify-center items-center h-full">
-        <statamic:nav:header>
+        <statamic:nav:header as="links">
+            @foreach($links as $link)
             <li>
-                @if(isset($icon))
-                    <a target="{{ isset($open_in_new_tab) && $open_in_new_tab ? '_blank' : '_self' }}" href="{{ $url }}">
-                        <img class="max-w-[40px]" src="{{ $icon->manipulate(['width' => 225]) ?? '' }}" alt="{{ $icon->alt ?? '' }}">
+                @if(isset($link['icon']))
+                    <a target="{{ isset($link->open_in_new_tab) && $link->open_in_new_tab ? '_blank' : '_self' }}" href="{{ $link['url'] }}">
+                        <img class="max-w-[40px]" src="{{ $link['icon']->value() ? $link['icon']->value()->manipulate(['width' => 225]) : '' }}" alt="{{ $link['icon']->alt ?? '' }}">
                     </a>
                 @else
-                    <a target="{{ isset($open_in_new_tab) && $open_in_new_tab ? '_blank' : '_self' }}"
-                    class="hover:text-primary-red cursor-pointer text-[1.75rem] active:border-b-2"
-                    href="{{ $url }}">
-                    {{ $title }}
+                    <a target="{{ isset($link->open_in_new_tab) && $link->open_in_new_tab ? '_blank' : '_self' }}"
+                    class="font-bold text-sm text-primary-gray hover:text-primary-red cursor-pointer
+                    {{ isset($link->is_cta_button) && $link->is_cta_button->value() ? 'border-2 border-primary-gray md:px-[1.25rem] md:py-[.45rem] text-primary-gray hover:text-primary-red' : '' }}"
+                    href="{{ $link['url'] }}">
+                    {{ $link['title'] }}
                     </a>
                 @endif
             </li>
+            @endforeach
         </statamic:nav:header>
     </ul>
 </nav>

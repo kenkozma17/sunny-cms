@@ -12,7 +12,7 @@ $context = $__data;
                     @php $svg = file_get_contents($logo->resolvedPath()); @endphp
                     {!! $svg !!}
                 @else
-                    <img src="{{ $logo->manipulate(['w' => 300]) ?? '' }}" alt="{{ $logo->alt ? '' }}">
+                    <img src="{{ $logo->manipulate(['w' => 300]) ?? '' }}" alt="{{ $logo->alt ?? '' }}">
                 @endif
             @else
                 <span>Logo here</span>
