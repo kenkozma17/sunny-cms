@@ -1,0 +1,44 @@
+tree:
+  -
+    id: 3490f3d2-3141-41d5-bd0a-39a05bc9ff6b
+    title: About
+    url: /about
+    data:
+      is_cta_button: false
+  -
+    id: f8e51e40-bc72-4407-a963-18045c96fcd8
+    title: Events
+    url: /events
+    data:
+      is_cta_button: false
+  -
+    id: 37186311-1e2a-484c-bdc9-e1368e7b5e29
+    title: Directory
+    url: /tenants
+    data:
+      is_cta_button: false
+  -
+    id: ca2f8c3e-8321-4291-acd4-4ad948f6954c
+    title: 'Contact Us'
+    url: /contact-us
+    data:
+      is_cta_button: false
+  -
+    id: 297c1ea9-bd5d-4b56-8f72-7567cd61eb83
+    title: Test
+    url: 'https://google.com'
+    data:
+      is_cta_button: false
+  -
+    id: aa1e1476-ef88-443a-9dc0-3710ae13e428
+    title: 'Become A Partner'
+    url: /tenant-information
+    data:
+      is_cta_button: true
+  -
+    id: f1b4caf4-f04f-41bd-94a4-1b43b3372d62
+    title: Messenger
+    url: 'http://m.me/VTCMall'
+    data:
+      icon: messenger.png
+      is_cta_button: false

@@ -1,0 +1,76 @@
+title: Footer
+data:
+  primary_links:
+    -
+      id: maccz7ef
+      text: Home
+      url: 'entry::home'
+      type: link
+      enabled: true
+    -
+      id: mace7b7z
+      text: About
+      url: 'https://yahoo.com'
+      type: link
+      enabled: true
+  footer_sections:
+    -
+      id: macb2xpc
+      title: About
+      links:
+        -
+          id: macb31oc
+          link_text: Mission
+          url: 'https://google.com'
+          type: link
+          enabled: true
+        -
+          id: macb3d4e
+          link_text: Team
+          url: 'https://yahoo.com'
+          type: link
+          enabled: true
+        -
+          id: macb3pje
+          link_text: Newsletter
+          url: 'https://google.com'
+          type: link
+          enabled: true
+      type: footer_section
+      enabled: true
+    -
+      id: maccb1l3
+      title: Support
+      links:
+        -
+          id: maccb9jf
+          link_text: Contact
+          url: 'https://google.com'
+          type: link
+          enabled: true
+        -
+          id: maccbhdq
+          link_text: 'Refund Policy'
+          url: 'https://google.com'
+          type: link
+          enabled: true
+      type: footer_section
+      enabled: true
+    -
+      id: maceefl3
+      title: Contact
+      links:
+        -
+          id: maceelke
+          link_text: 'Call Me'
+          url: 'https://google.com'
+          type: link
+          enabled: true
+        -
+          id: macees1p
+          link_text: 'Call Them'
+          url: 'https://google.com'
+          type: link
+          enabled: true
+      type: footer_section
+      enabled: true

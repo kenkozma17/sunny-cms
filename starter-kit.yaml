@@ -1,10 +1,19 @@
 updatable: true
 export_paths:
+  - content/collections/pages.yaml
+  - content/globals/brand.yaml
+  - content/globals/company.yaml
+  - content/globals/footer.yaml
+  - content/navigation/header.yaml
+  - content/trees/collections/pages.yaml
+  - content/trees/navigation/footer.yaml
+  - content/trees/navigation/header.yaml
   - app/Models/User.php
   - config/auth.php
   - config/statamic/users.php
   - config/filesystems.php
   - config/statamic/eloquent-driver.php
+  - database/migrations/2025_08_26_054407_statamic_auth_tables.php
   - users
   - resources
   - package.json
