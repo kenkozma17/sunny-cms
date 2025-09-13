@@ -1,0 +1,34 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: logo
+            field:
+              container: images
+              type: assets
+              display: Logo
+              max_files: 1
+          -
+            handle: logo_white
+            field:
+              max_files: 1
+              container: images
+              type: assets
+              display: 'Logo (White)'
+          -
+            handle: short_logo_dark
+            field:
+              max_files: 1
+              container: images
+              type: assets
+              display: 'Short Logo (Dark)'
+          -
+            handle: short_logo_white
+            field:
+              max_files: 1
+              container: images
+              type: assets
+              display: 'Short Logo (White)'

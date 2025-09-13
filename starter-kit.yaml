@@ -1,0 +1,11 @@
+updatable: true
+export_paths:
+  - app/Models/User.php
+  - config/auth.php
+  - config/statamic/users.php
+  - config/filesystems.php
+  - config/statamic/eloquent-driver.php
+  - users
+  - resources
+  - package.json
+  - vite.config.js

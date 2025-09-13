@@ -1,0 +1,24 @@
+{
+    "name": "kenkozma17/sunny-cms",
+    "extra": {
+        "statamic": {
+            "name": "Sunny CMS",
+            "description": "A basic starter kit built on statamic that operates around flexible components"
+        },
+        "laravel": {
+            "providers": [
+                "Kenkozma17\\SunnyCMS\\ServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Kenkozma17\\SunnyCMS\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
+        }
+    }
+}

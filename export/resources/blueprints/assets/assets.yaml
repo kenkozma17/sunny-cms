@@ -1,0 +1,12 @@
+title: Asset
+tabs:
+  main:
+    sections:
+      -
+        fields:
+          -
+            handle: alt
+            field:
+              display: 'Alt Text'
+              type: text
+              instructions: 'Description of the image'

@@ -1,0 +1,19 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        display: 'New Section'
+        fields:
+          -
+            handle: icon
+            field:
+              container: images
+              type: assets
+              display: Icon
+              max_files: 1
+          -
+            handle: is_cta_button
+            field:
+              type: toggle
+              display: 'CTA Button'

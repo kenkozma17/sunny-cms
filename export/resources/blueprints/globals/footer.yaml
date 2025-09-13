@@ -1,0 +1,73 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        display: 'Primary Links'
+        fields:
+          -
+            handle: primary_links
+            field:
+              type: replicator
+              display: 'Primary Links'
+              max_sets: 3
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    link:
+                      display: Link
+                      fields:
+                        -
+                          handle: text
+                          field:
+                            type: text
+                            display: Text
+                        -
+                          handle: url
+                          field:
+                            type: link
+                            display: URL
+      -
+        display: 'Secondary Links'
+        fields:
+          -
+            handle: footer_sections
+            field:
+              type: replicator
+              display: 'Footer Sections'
+              max_sets: 3
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    footer_section:
+                      display: 'Footer Section'
+                      fields:
+                        -
+                          handle: title
+                          field:
+                            type: text
+                            display: Title
+                        -
+                          handle: links
+                          field:
+                            type: replicator
+                            display: Links
+                            sets:
+                              new_set_group:
+                                display: 'New Set Group'
+                                sets:
+                                  link:
+                                    display: Link
+                                    fields:
+                                      -
+                                        handle: link_text
+                                        field:
+                                          type: text
+                                          display: Text
+                                      -
+                                        handle: url
+                                        field:
+                                          type: link
+                                          display: URL

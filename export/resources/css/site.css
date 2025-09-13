@@ -1,0 +1,61 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@source "../views";
+@source "../../content";
+
+@layer base {
+    body, html {
+      @apply text-[16px] w-full overflow-x-hidden;
+      font-family: 'DM Sans', sans-serif;
+    }
+
+    body {
+        @apply flex flex-col justify-between min-h-screen;
+    }
+
+    h1 {
+        @apply md:text-[3.125rem] text-[1.85rem] font-bold;
+    }
+
+    h2 {
+      @apply md:text-[3.125rem] font-bold text-[1.75rem];
+    }
+
+    h3 {
+        @apply md:text-[1.5rem] font-bold text-[1.45rem];
+    }
+
+    .content-block p {
+        @apply leading-[36px]  md:mb-[1rem] mb-[.75rem];
+    }
+
+    .content-block h2 {
+        @apply mb-[.75rem];
+    }
+
+    .form-field input[type="text"], .form-field input[type="tel"], .form-field textarea {
+        @apply border-[#808080]/50 border rounded px-[1rem] py-[.5rem];
+    }
+
+    .form-field br {
+        @apply hidden;
+    }
+
+    .form-field-checkboxes label {
+        @apply block;
+    }
+
+    .form-field-checkboxes label input {
+        @apply mr-[.25rem];
+    }
+
+    a:hover .social-icon .icon-set {
+        @apply fill-primary-red;
+    }
+}
+
+
+@theme {
+    --color-primary-red: #7E1416;
+    --color-primary-gray: #323231;
+}

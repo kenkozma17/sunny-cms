@@ -1,0 +1,327 @@
+title: 'Flexible Content'
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: replicator_field
+            field:
+              type: replicator
+              display: 'Replicator Field'
+              sets:
+                core:
+                  display: Core
+                  sets:
+                    content_bard:
+                      display: 'Content Bard'
+                      fields:
+                        -
+                          handle: bard_field
+                          field:
+                            remove_empty_nodes: false
+                            type: bard
+                            display: 'Bard Field'
+                    content_code:
+                      display: 'Content Code'
+                      fields:
+                        -
+                          handle: code_field
+                          field:
+                            type: code
+                            display: 'Code Field'
+                    banner:
+                      display: Banner
+                      fields:
+                        -
+                          handle: banner_title
+                          field:
+                            type: text
+                            display: 'Banner Title'
+                        -
+                          handle: banner_image
+                          field:
+                            max_files: 1
+                            container: images
+                            type: assets
+                            display: 'Banner Image'
+                    upcoming_events:
+                      display: 'Upcoming Events'
+                      fields:
+                        -
+                          handle: title
+                          field:
+                            type: text
+                            display: Title
+                    current_promotions:
+                      display: 'Current Promotions'
+                      fields:
+                        -
+                          handle: title
+                          field:
+                            type: text
+                            display: Title
+                    tenants:
+                      display: Tenants
+                      fields:
+                        -
+                          handle: title
+                          field:
+                            type: text
+                            display: Title
+                        -
+                          handle: category
+                          field:
+                            max_items: 1
+                            type: terms
+                            display: Category
+                    content_and_image:
+                      display: 'Content and Image'
+                      fields:
+                        -
+                          handle: title
+                          field:
+                            type: text
+                            display: Title
+                        -
+                          handle: content
+                          field:
+                            type: textarea
+                            display: Content
+                        -
+                          handle: image
+                          field:
+                            max_files: 1
+                            container: images
+                            type: assets
+                            display: Image
+                        -
+                          handle: cta_one_group
+                          field:
+                            type: group
+                            display: 'CTA One Group'
+                            fields:
+                              -
+                                handle: cta_text
+                                field:
+                                  type: text
+                                  display: 'CTA Text'
+                              -
+                                handle: cta_link
+                                field:
+                                  type: text
+                                  display: 'CTA Link'
+                        -
+                          handle: cta_two_group
+                          field:
+                            type: group
+                            display: 'CTA Two Group'
+                            fields:
+                              -
+                                handle: cta_text
+                                field:
+                                  type: text
+                                  display: 'CTA Text'
+                              -
+                                handle: cta_link
+                                field:
+                                  type: text
+                                  display: 'CTA Link'
+                    content_block:
+                      display: 'Content Block'
+                      fields:
+                        -
+                          handle: content
+                          field:
+                            remove_empty_nodes: false
+                            type: bard
+                            display: Content
+                            buttons:
+                              - h2
+                              - h3
+                              - bold
+                              - italic
+                              - unorderedlist
+                              - orderedlist
+                              - removeformat
+                              - quote
+                              - anchor
+                              - image
+                              - table
+                              - alignleft
+                              - aligncenter
+                              - alignright
+                              - alignjustify
+                            sets:
+                              core:
+                                display: Core
+                                sets:
+                                  video_embed:
+                                    display: 'Video Embed'
+                                    fields:
+                                      -
+                                        handle: url
+                                        field:
+                                          type: text
+                                          display: URL
+                                      -
+                                        handle: width
+                                        field:
+                                          type: width
+                                          display: Width
+                    gallery:
+                      display: Gallery
+                      fields:
+                        -
+                          handle: images
+                          field:
+                            min_files: 3
+                            container: images
+                            type: assets
+                            display: Images
+                    heading_and_images:
+                      display: 'Heading And Images'
+                      fields:
+                        -
+                          handle: title
+                          field:
+                            type: text
+                            display: Title
+                        -
+                          handle: images
+                          field:
+                            max_files: 3
+                            container: images
+                            type: assets
+                            display: images
+                    events_list:
+                      display: 'Events List'
+                      fields:
+                        -
+                          handle: title
+                          field:
+                            type: text
+                            display: Title
+                    tenants_list:
+                      display: 'Tenants List'
+                      fields:
+                        -
+                          handle: title
+                          field:
+                            type: text
+                            display: Title
+                    content_and_image_alt:
+                      display: 'Content And Image Alt'
+                      fields:
+                        -
+                          handle: title
+                          field:
+                            type: text
+                            display: Title
+                        -
+                          handle: content
+                          field:
+                            remove_empty_nodes: false
+                            type: bard
+                            display: Content
+                        -
+                          handle: image
+                          field:
+                            max_files: 1
+                            container: images
+                            type: assets
+                            display: Image
+                        -
+                          handle: cta_one_group
+                          field:
+                            type: group
+                            display: 'CTA Group One'
+                            fields:
+                              -
+                                handle: cta_text
+                                field:
+                                  type: text
+                                  display: 'CTA Text'
+                              -
+                                handle: cta_link
+                                field:
+                                  type: text
+                                  display: 'CTA Link'
+                        -
+                          handle: cta_two_group
+                          field:
+                            type: group
+                            display: 'CTA Group Two'
+                            fields:
+                              -
+                                handle: cta_text
+                                field:
+                                  type: text
+                                  display: 'CTA Text'
+                              -
+                                handle: cta_link
+                                field:
+                                  type: text
+                                  display: 'CTA Link'
+                    contact_form:
+                      display: 'Contact Form'
+                      fields:
+                        -
+                          handle: title
+                          field:
+                            type: text
+                            display: Title
+                        -
+                          handle: description
+                          field:
+                            type: textarea
+                            display: Description
+                    promos_list:
+                      display: 'Promos List'
+                      fields:
+                        -
+                          handle: title
+                          field:
+                            type: text
+                            display: Title
+          -
+            handle: template
+            field:
+              type: template
+              display: Template
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - pages
+              max_items: 1
+              listable: false
+              localizable: true
+  meta_seo:
+    display: Meta/SEO
+    sections:
+      -
+        display: 'Meta Data'
+        fields:
+          -
+            import: meta_data

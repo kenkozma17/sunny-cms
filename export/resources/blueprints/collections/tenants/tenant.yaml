@@ -1,0 +1,133 @@
+title: Tenant
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: banner
+            field:
+              type: group
+              display: Banner
+              fields:
+                -
+                  handle: banner_title
+                  field:
+                    default: 'Virac Town Center'
+                    type: text
+                    display: 'Banner Title'
+                -
+                  handle: banner_image
+                  field:
+                    max_files: 1
+                    container: images
+                    type: assets
+                    display: 'Banner Image'
+                    validate:
+                      - required
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: thumbnail
+            field:
+              max_files: 1
+              container: images
+              type: assets
+              display: Thumbnail
+          -
+            handle: author
+            field:
+              type: users
+              display: Author
+              default: current
+              localizable: true
+              max_items: 1
+          -
+            handle: template
+            field:
+              type: template
+              display: Template
+              localizable: true
+          -
+            handle: email
+            field:
+              type: text
+              display: Email
+          -
+            handle: phone
+            field:
+              type: text
+              display: Phone
+          -
+            handle: website
+            field:
+              type: text
+              display: Website
+          -
+            handle: hours
+            field:
+              remove_empty_nodes: false
+              type: bard
+              display: Hours
+              validate:
+                - required
+          -
+            handle: about
+            field:
+              type: textarea
+              display: About
+          -
+            handle: short_description
+            field:
+              type: textarea
+              display: 'Short Description'
+          -
+            handle: address
+            field:
+              type: text
+              display: Address
+          -
+            handle: location_lat
+            field:
+              type: text
+              display: location_lat
+          -
+            handle: location_long
+            field:
+              type: text
+              display: location_long
+          -
+            handle: facebook_link
+            field:
+              type: text
+              display: 'Facebook Link'
+          -
+            handle: instagram_link
+            field:
+              type: text
+              display: 'Instagram Link'
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: categories
+            field:
+              type: terms
+              taxonomies:
+                - categories
+              display: Categories
+              mode: select

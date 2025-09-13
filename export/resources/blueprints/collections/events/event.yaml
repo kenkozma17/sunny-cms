@@ -1,0 +1,151 @@
+title: Event
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: banner
+            field:
+              type: group
+              display: Banner
+              fields:
+                -
+                  handle: banner_title
+                  field:
+                    type: text
+                    display: 'Banner Title'
+                    default: 'Virac Town Center'
+                -
+                  handle: banner_image
+                  field:
+                    max_files: 1
+                    container: images
+                    type: assets
+                    display: 'Banner Image'
+                    validate:
+                      - required
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: thumbnail
+            field:
+              container: images
+              type: assets
+              display: Thumbnail
+              max_files: 1
+          -
+            handle: short_description
+            field:
+              type: textarea
+              display: 'Short Description'
+              character_limit: 200
+              validate:
+                - 'max:200'
+          -
+            handle: content
+            field:
+              remove_empty_nodes: false
+              type: bard
+              display: Content
+              buttons:
+                - h2
+                - h3
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - removeformat
+                - quote
+                - anchor
+                - image
+                - table
+                - code
+                - codeblock
+              validate:
+                - required
+              sets:
+                core:
+                  display: Core
+                  sets:
+                    video_embed:
+                      display: 'Video Embed'
+                      fields:
+                        -
+                          handle: url
+                          field:
+                            type: text
+                            display: URL
+                        -
+                          handle: width
+                          field:
+                            type: width
+                            display: Width
+          -
+            handle: author
+            field:
+              type: users
+              display: Author
+              default: current
+              localizable: true
+              max_items: 1
+          -
+            handle: location
+            field:
+              type: text
+              display: Location
+          -
+            handle: start_date
+            field:
+              type: date
+              display: 'Start Date'
+              width: 50
+              validate:
+                - required
+          -
+            handle: end_date
+            field:
+              type: date
+              display: 'End Date'
+              width: 50
+          -
+            handle: start_time
+            field:
+              type: time
+              display: 'Start Time'
+              width: 50
+              validate:
+                - required
+          -
+            handle: end_time
+            field:
+              type: time
+              display: 'End Time'
+              width: 50
+              validate:
+                - required
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: tags
+            field:
+              type: terms
+              taxonomies:
+                - tags
+              display: Tags
+              mode: select

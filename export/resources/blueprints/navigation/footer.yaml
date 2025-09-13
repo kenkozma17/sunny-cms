@@ -1,0 +1,28 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: footer_links
+            field:
+              type: replicator
+              display: 'Footer Links'
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    footer_link:
+                      display: 'Footer Link'
+                      fields:
+                        -
+                          handle: text
+                          field:
+                            type: text
+                            display: Text
+                        -
+                          handle: link
+                          field:
+                            type: link
+                            display: Link

@@ -1,0 +1,69 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: first_name
+            field:
+              type: text
+              display: 'First Name'
+              width: 50
+              validate:
+                - required
+          -
+            handle: last_name
+            field:
+              type: text
+              display: 'Last Name'
+              width: 50
+              validate:
+                - required
+          -
+            handle: email
+            field:
+              type: text
+              display: Email
+              width: 50
+              validate:
+                - required
+          -
+            handle: phone
+            field:
+              input_type: tel
+              type: text
+              display: Phone
+              width: 50
+          -
+            handle: message
+            field:
+              type: textarea
+              display: Message
+          -
+            handle: inquiry_type
+            field:
+              options:
+                -
+                  key: general-questions
+                  value: 'General Questions'
+                -
+                  key: event-hosting
+                  value: 'Event Hosting'
+                -
+                  key: feedback
+                  value: 'Feedback & Suggestions'
+                -
+                  key: victor-hall-venue-rental
+                  value: 'Victor Hall Venue Rental'
+                -
+                  key: metrowalk-events
+                  value: 'Metrowalk Events'
+                -
+                  key: business-partnerships
+                  value: 'Business Partnerships'
+                -
+                  key: rent
+                  value: Rent
+              type: checkboxes
+              display: 'Inquiry Type'

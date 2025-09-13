@@ -1,0 +1,28 @@
+title: 'Meta Data'
+fields:
+  -
+    handle: meta_title
+    field:
+      type: text
+      display: 'Meta Title'
+      instructions: 'Every URL in your site should have a unique Meta Title, ideally less than 60 characters long.'
+  -
+    handle: meta_image
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: 'Meta Image'
+  -
+    handle: meta_description
+    field:
+      type: textarea
+      display: 'Meta Description'
+      instructions: 'Every URL in your site should have a unique Meta Description, ideally less than 160 characters long.'
+      character_limit: 160
+  -
+    handle: canonical_url
+    field:
+      type: text
+      display: 'Canonical URL'
+      instructions: 'Every URL in your site should have a unique canonical URL.'

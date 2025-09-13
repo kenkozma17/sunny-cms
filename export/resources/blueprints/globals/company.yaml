@@ -1,0 +1,17 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: name
+            field:
+              default: 'Virac Town Center'
+              type: text
+              display: Name
+          -
+            handle: address
+            field:
+              type: textarea
+              display: Address

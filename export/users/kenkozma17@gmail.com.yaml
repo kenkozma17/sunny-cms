@@ -1,0 +1,8 @@
+name: Ken
+super: true
+id: 8b68364e-52e4-4f5f-aa2e-6a5d2fadecda
+password_hash: $2y$12$P0mALyq5FK9CGfQ.eWgjaeAYlUuz6f5FXQzHPzI3Qe4i8insyiNGi
+preferences:
+  collections:
+    pages:
+      after_save: continue_editing
